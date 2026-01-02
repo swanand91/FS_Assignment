@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+/* Main section */
+.rooms {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* H1 exactly like image */
+.rooms h1 {
+    font-size: 60px;           /* mentioned in image */
+    color: #c78b36;            /* exact color */
+    margin-bottom: 20px;
+}
+
+/* Paragraph style */
+.description {
+    max-width: 800px;
+    margin: auto;
+    line-height: 25px;         /* mentioned in image */
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* Cards layout */
+.room-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Individual card */
+.room {
+    width: 32%;
+}
+
+.room img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* H2 style */
+.room h2 {
+    margin: 15px 0 5px;
+    font-size: 22px;
+    color: #000;
+}
+
+/* Price */
+.price {
+    font-size: 14px;
+    color: #c78b36;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .room-cards {
+        flex-direction: column;
+    }
+
+    .room {
+        width: 100%;
+    }
+}
